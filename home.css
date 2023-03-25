@@ -1064,3 +1064,138 @@ button {
     font-size: 13px;
 }
 /* --------------------------End of right nav styling----------------- */
+/* ---------------------------Content styling----------------------------------- */
+
+.fb-content {
+    margin-top: 58px;
+    background-color: rgb(24,25,26);
+}
+
+/* -------------------------left content---------------------------------- */
+.left-content,
+.semi-left-content {
+    width: 305px;
+    height: 100vh;
+    background-color: rgb(24, 25, 26);
+    overflow: auto;
+    padding-bottom: 55px;
+}
+
+.left-container {
+    padding: 15px 0 0 10px;
+}
+
+.my-profile-div,
+.friends-div,
+.left-section-div,
+.left-seemore-div,
+.left-seeless-div,
+.short-text-div {
+    padding: 7px 12px 9px 5px;
+    border-radius: 10px;
+    /* background-color: blue; */
+    width: 288px;
+}
+
+.friends-div a,
+.my-profile-div a{
+    text-decoration: none;
+}
+
+.my-profile-div:hover,
+.friends-div:hover,
+.left-section-div:hover,
+.left-seemore-div:hover,
+.left-seeless-div:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.img,
+.imgS {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.imgS {
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    margin-right: 15px;
+}
+
+.l-text {
+    /* background-color: yellow; */
+    font-weight: 600;
+    text-align: left;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.arrow-down-div {
+    background-color: rgb(48, 48, 49);
+    margin-right: 12px;
+    border-radius: 100%;
+}
+
+.arrow-down,
+.arrow-up {
+    margin-left: -2px;
+    padding: 9px 10px 8px 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.see-more-div {
+    display: none;
+}
+
+.see-more-divP:focus-within .see-more-div {
+    display: block;
+}
+
+.see-less-div {
+    display: none;
+}
+
+.see-more-divP:focus-within .see-less-div {
+    display: block;
+}
+
+.short-text-div {
+    padding: 7px 12px 0 5px;
+    padding-bottom: -10px;
+}
+
+.short-text-div .p,
+.short-text-div .span {
+    font-size: 15px;
+    font-weight: 600;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.short-text-div .span {
+    font-weight: lighter;
+    color: rgb(41, 150, 240);
+    visibility: hidden;
+}
+
+.shortcut-div:hover .short-text-div .span {
+    visibility: visible;
+}
+
+.left-footer-div {
+    font-size: 13px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.aa {
+    color: rgb(228, 230, 235);
+    line-height: 15px;
+}
+
+.aa:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------end of left content styling------------------------ */
