@@ -1199,3 +1199,466 @@ button {
 }
 
 /* ---------------------------end of left content styling------------------------ */
+
+/* -------------------------------Middle content styling--------------------------- */
+.middle-content {
+    width: 760px;
+    height: 100vh;
+    background-color: rgb(24,25,26);
+    overflow: auto;
+    /* padding-left: 65px; */
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.actual-middle-width{
+    width: 530px;
+    background-color: rgb(24,25,26);
+}
+
+.stories-reel-box{
+    background-color: rgb(36,37,38);   
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.stories-reels-div{
+    margin: 0 10px;
+}
+
+.stories-btn{
+    width: 95%;    
+    margin-left: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.reels-btn{
+    border-radius: 5px;
+    padding: 10px;
+    width: 95%;
+    margin-left: 5px;
+}
+
+.stories-btn:hover,
+.reels-btn:hover{
+    background-color: rgb(58, 59, 60);
+}
+
+.first-div:focus-within .book,
+.first-div:focus-within .stories-text,
+.second-div:focus-within .movie,
+.second-div:focus-within .reels-text{
+    color: rgb(0, 119, 255);
+}
+
+.book{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.stories-text,
+.reels-text{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.movie{
+    font-size: 23px;
+    color: rgb(176,179,184);
+    margin-right: 10px;
+}
+
+.reels-text{
+    color: rgb(176,179,184);
+}
+
+.lineS,
+.lineR{
+    height: 3px;
+    background-color: rgb(0, 119, 255);
+    visibility: hidden;
+}
+
+.first-div:focus-within .lineS,
+.second-div:focus-within .lineR{
+    visibility: visible;
+}
+
+.overflow-stories-div{
+    overflow: auto;
+}
+
+.prof-img-div{
+    padding-left: 15px;
+    margin-right: 10px;
+}
+
+.prof-img{
+    width: 120px;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.1s linear;
+}
+
+.create-story{
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+    width: 120px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.11);
+    background-color: rgb(36,37,38);
+    border-radius: 0 0 10px 10px;
+}
+
+.plus-div{
+    bottom: 30px;
+    left: 55px;
+}
+
+.p-icon{
+    font-size: 30px;
+    border-radius: 100%;
+    border: 5px solid rgb(36,37,38);
+    color: rgb(46,137,255);
+}
+
+.st-imgs{
+    width: 120px;
+    height: 205px;
+    border-radius: 10px;
+    transition: all 0.1s linear;
+}
+
+.abs-img-div{
+    top: 15px;
+    left: 15px;
+    border: 3px solid rgb(46,137,255);
+    border-radius: 100%;
+}
+
+.abs-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.story-text{
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    bottom: 0;
+    left: 15px;
+    width: 90px;
+}
+
+.status1{
+    margin-right: 10px;
+}
+
+.status:hover .prof-img,
+.status1:hover .st-imgs{
+    transform: scale(1.015);
+}
+
+.status:hover .create-story{
+    background-color: rgb(21, 22, 22);
+}
+
+.on-your-mind-box{
+    padding: 15px 15px 10px 15px;
+    background-color: rgb(36,37,38);
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.p-input-div{
+    padding-left: 20px;
+    width: 480px;
+    height: 37px;
+    border-radius: 30px;
+    background-color: rgb(58,59,60);
+    text-align: left;
+    color: rgb(176,179,184);
+    font-size: 17px;
+}
+
+.p-input-div:hover{
+    background-color: rgb(76, 77, 78);
+}
+
+
+.grey{
+    color: rgb(176,179,184);
+    font-weight: 600;
+}
+
+.video11-icon{
+    color: rgb(240,40,73);
+}
+
+.photo-icon{
+    color: rgb(69,189,98);
+}
+
+.smiley-icon{
+    color: rgb(247,185,40);
+}
+
+.btn11{
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.btn11:hover{
+    background-color: rgb(58,59,60);
+}
+
+.fb-post-box{
+    background-color: rgb(36,37,38);
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.post-hover-dropdown{
+    width: 380px;
+    height: 265px;
+    background-color: rgb(36,37,38);
+    left: -120px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.103);
+    visibility: hidden;
+    z-index: 15;
+}
+
+.post-text1:hover .post-hover-dropdown{
+    visibility: visible;
+}
+
+.dropdown-content-div{
+    padding: 15px;
+}
+
+.macaroni-div{
+    width: fit-content;
+    padding: 1px;
+    border-radius: 100%;
+    border: 4px solid rgb(46,137,255);
+    margin-right: 15px;
+    margin-top: -65px;
+}
+
+.macaroni-profile{
+    width: 90px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+.dropdown-text1{
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.z{
+    line-height: 35px;
+}
+
+.icon{
+    color: rgb(176,179,184);
+    margin-right: 10px;
+}
+
+.z a{
+    text-decoration: none;
+}
+
+.followers-link{
+    color: rgb(228, 230, 235);
+}
+
+.macaroni-link:hover,
+.followers-link:hover{
+    text-decoration: underline;
+}
+
+.btn-sec{
+    padding: 0 15px;
+}
+
+.btnA,
+.btnB{
+    background-color: rgb(46,137,255);
+    padding: 7px 0;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btnB{
+    background-color: rgb(58,59,60);
+}
+
+.btnC{
+    background-color: rgb(58,59,60);
+    padding: 7px 0;
+    border-radius: 5px;
+}
+
+.btnA:hover{
+    background-color: rgb(76, 152, 252);
+}
+
+.btnB:hover,
+.btnC:hover{
+    background-color: rgb(84, 85, 87);
+}
+
+.btn-text{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.fb-post{
+    padding: 15px;
+}
+
+.post-img-div{
+    margin-right: 10px;
+}
+
+.post-img{
+    width: 35px;
+    border-radius: 100%;
+    border: 3px solid rgb(46,137,255);
+}
+
+.block-post-text-div{
+    line-height: 20px;
+}
+
+.block-post-text-div a{
+    text-decoration: none;
+}
+
+.post-text1{
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.post-text1-link{
+    color: rgb(191,194,198);
+}
+
+.post-text-div .verify-icon{
+    font-size: 15px;
+    color: rgb(46,137,255);
+}
+
+.post-text2{
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.post-text2-link{    
+    color: rgb(176,179,184);
+}
+
+.post-text1-link:hover,
+.post-text2-link:hover{
+    text-decoration: underline;
+}
+
+.world-icon{
+    font-size: 12px;
+    color: rgb(176,179,184);
+}
+
+.post-text3{
+    color: rgb(176,179,184);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.dot{
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 7px 8px;
+    border-radius: 100%;
+}
+
+.x-icon{
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 100%;
+}
+
+.dot:hover,
+.x-icon:hover{
+    background-color: rgb(58,59,60);
+}
+
+.post-vid{
+    width: 530px;
+    outline: none;
+}
+
+.like-section{
+    color: rgb(176,179,184);
+}
+
+.comment-div-box{
+    padding: 0 15px;
+}
+
+.comment-div{
+    margin-right: 15px;
+}
+
+.comment-text{
+    margin-right: 5px;
+    color: rgb(176,179,184);
+}
+
+.comment-icon,
+.share-icon,
+.like-icon{
+    color: rgb(176,179,184);
+}
+
+.share-text{
+    margin-right: 5px;
+    color: rgb(176,179,184);
+}
+
+.like1-div,
+.comment1-div,
+.share1-div,
+.pro-div{    
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.like1-div:hover,
+.comment1-div:hover,
+.share1-div:hover,
+.pro-div:hover{
+    background-color: rgb(58,59,60);
+}
+
+.profile-img1{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.like1-text,
+.comment1-text,
+.share1-text{
+    color: rgb(176,179,184);
+    font-weight: 600;
+    margin-left: 10px;
+}
+/* ----------------------end of middle content styling------------------- */
