@@ -1863,3 +1863,158 @@ button {
 }
 
 /* -------------------------------End of right content styling--------------------------- */
+
+/* ---------------------------fixed message button--------------------- */
+
+.c-msg-fixed-div {
+    bottom: 20px;
+    right: 20px;
+}
+
+.c-msg-div {
+    background-color: rgb(75, 76, 79);
+    padding: 12px 13px 12px 15px;
+    border-radius: 100%;
+}
+
+.new-msg {
+    font-size: 20px;
+}
+
+.c-msg-div:hover {
+    background-color: rgb(110, 112, 119);
+}
+
+.dt-icon1-div {
+    top: -50px;
+    background-color: rgb(75, 76, 79);
+    padding: 8px 11px 6px 10px;
+    border-radius: 100%;
+    visibility: hidden;
+}
+
+.dt-icon1 {
+    font-size: 20px;
+}
+
+.dt-icon-dropup {
+    padding: 8px 8px 0 8px;
+    width: 320px;
+    height: 83px;
+    background-color: rgb(36,37,38);
+    top: -120px;
+    left: -310px;
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.199);
+    visibility: hidden;
+}
+
+.dt-icon-dropup::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 0 15px;
+    transform: rotate(180deg);
+    border-color: transparent transparent transparent rgb(36,37,38);
+    bottom: -15px;
+    right: 0;
+}
+
+.dot-option:focus-within .dt-icon-dropup{
+    visibility: visible;
+}
+
+.circle-x{
+    font-size: 22px;
+}
+
+.dropup-txt{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.drp-text-div{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.drp-text-div2{
+    border-radius: 5px;
+    padding: 3px 0 0 5px;
+}
+
+.drp-text-div:hover,
+.drp-text-div2:hover{
+    background-color: rgb(58, 59, 60);
+}
+
+.c-msg-fixed-div:focus-within .dt-icon1-div,
+.c-msg-fixed-div:focus-within .msg-box-div,
+.c-msg-div:hover .c-msg-tooltip {
+    visibility: visible;
+}
+
+.c-msg-tooltip {
+    text-align: left;
+    font-size: 13px;
+    left: -100px;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: rgb(224, 229, 231);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: black;
+    visibility: hidden;
+    transition: all 0s ease-in;
+    transition-delay: 0.5s;
+    z-index: 13;
+}
+
+.msg-box-div {
+    width: 330px;
+    height: 458px;
+    background-color: rgb(36, 37, 38);
+    top: -390px;
+    left: -340px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.219);
+    visibility: hidden;
+}
+
+.new-msg-text {
+    font-weight: 600;
+}
+
+.x-msg {
+    font-size: 22px;
+}
+
+.to {
+    margin-top: 15px;
+    margin-left: 5px;
+    cursor: text;
+}
+
+.input-to {
+    background-color: inherit;
+    outline: none;
+    padding-left: 10px;
+    width: 150px;
+}
+
+.suggest-text {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 102, 255);
+}
+
+.hr1 {
+    height: 3px;
+    background-color: rgb(0, 102, 255);
+    margin-top: 15px;
+}
+
+/* -------------end of fixed message button----------------- */
