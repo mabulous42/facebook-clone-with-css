@@ -1,0 +1,1689 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    color: rgb(228, 230, 235);
+    /* font-family: 'Roboto',Arial, Helvetica, sans-serif; */
+}
+
+button {
+    background-color: inherit;
+}
+
+.body {
+    background-color: rgb(24, 25, 26);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.nav-bar {
+    background-color: rgb(36, 37, 38);
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(57, 58, 59);
+    z-index: 50;
+}
+
+.nav-left {
+    margin-right: 5%;
+}
+
+.fb-logo-btn {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.fb-logo {
+    width: 40px;
+}
+
+.search-input-div {
+    background-color: inherit;
+}
+
+#search-input,
+#search-input1 {
+    width: 238px;
+    padding: 9px;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    caret-color: rgb(176, 179, 184);
+    padding-left: 30px;
+    background-color: rgb(58, 59, 60);
+    /* background-color: red; */
+    z-index: 2;
+}
+
+#search-input1 {
+    position: absolute;
+    /* top: 20px; */
+    padding-left: 15px;
+    left: -10px;
+    width: 248px;
+    visibility: hidden;
+}
+
+.search-input-dropdown {
+    width: 320px;
+    height: 205px;
+    background-color: rgb(36, 37, 38);
+    top: -8px;
+    left: -67px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+}
+
+.search-input-div:focus-within .search-input-dropdown {
+    display: block;
+}
+
+#search-input {
+    width: 30px;
+    border-radius: 100px;
+    margin-right: 208px;
+}
+
+.pointer {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-left: 12px;
+    padding: 8px;
+    border-radius: 100%;
+}
+
+.pointer:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.recent-text {
+    color: rgb(223, 225, 230);
+    font-weight: 600;
+}
+
+.edit-text {
+    color: rgb(93, 154, 233);
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.edit-text:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.r-edit {
+    padding: 0 10px;
+}
+
+.history-div {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: rgb(223, 225, 230);
+    width: 300px;
+}
+
+.history-div:hover {
+    background-color: rgba(58, 57, 57, 0.37);
+}
+
+.clock-div .clock {
+    font-size: 25px;
+    background-color: rgb(24, 25, 26);
+    padding: 5px;
+    border-radius: 100%;
+    font-weight: lighter;
+}
+
+.text-div {
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.text1 {
+    font-size: 15px;
+    text-align: left;
+    /* background-color: red; */
+    width: 180px;
+}
+
+.text2 {
+    font-size: 12px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.d-img {
+    width: 36px;
+    border-radius: 7px;
+}
+
+.x-div .x {
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+.x:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.search-input-div:focus-within #search-input1 {
+    visibility: visible;
+}
+
+.search-input-div:focus-within .search-icon {
+    visibility: hidden;
+}
+
+
+#search-input::placeholder,
+#search-input1::placeholder {
+    color: rgb(176, 179, 184);
+}
+
+.search-icon {
+    left: 12px;
+    top: 14px;
+    font-size: 13px;
+}
+
+.nav-middle {
+    /* background-color: red; */
+    align-items: center;
+    margin-left: -10%;
+}
+
+/* ------------------cccooooooooppppppyyyyyyyyyy thissssssssssssssssssssssssssssssssssssssssss */
+
+.home-btn-div,
+.video-btn-div,
+.market-btn-div,
+.group-btn-div {
+    margin-right: 1%;
+}
+
+/* -----------------toooooooooooooooooo hereeeeeeeeeeeeeeeee ------------------*/
+
+.home-btn,
+.video-btn,
+.market-btn,
+.group-btn,
+.pad-btn {
+    padding: 13px 45px 13px 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn {
+    padding: 11px 45px 11px 45px;
+    font-size: 20px;
+}
+
+.video-icon {
+    color: rgb(0, 119, 255);
+}
+
+.video-btn,
+.group-btn,
+.pad-btn {
+    padding: 10px 45px 10px 45px;
+}
+
+.video-btn {
+    padding: 6px 45px 6px 45px;
+}
+
+.video-btn .video-icon {
+    margin-top: 8px;
+    font-size: 26px;
+}
+
+.market-btn {
+    padding: 11px 45px 11px 45px;
+    font-size: 20px;
+}
+
+.group-btn .group-icon {
+    border-radius: 100%;
+    padding: 4px 5.5px 8px 5px;
+    border: 1px solid white;
+    font-size: 18px;
+}
+
+.pad-btn .pad-icon {
+    font-size: 26px;
+}
+
+.hr {
+    margin-bottom: 0;
+    margin-top: 0px;
+    width: 100%;
+    background-color: rgb(0, 119, 255);
+    height: 3px;
+    left: 0;
+}
+
+.home-btn:hover,
+.market-btn:hover,
+.group-btn:hover,
+.pad-btn:hover {
+    background-color: rgb(58, 59, 60);
+    border-radius: 10px;
+}
+
+.profile-img,
+.img,
+.imgS {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+}
+
+.messenger-btn-div,
+.notification-btn-div,
+.profile-btn-div {
+    margin-left: 10px;
+}
+
+.profile-btn-div {
+    margin-right: 5px;
+}
+
+.menu-btn,
+.messenger-btn,
+.notification-btn {
+    background-color: rgb(58, 59, 60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.menu-btn:hover,
+.messenger-btn:hover,
+.notification-btn:hover {
+    background-color: rgb(95, 96, 97);
+}
+
+.menu-btn .menu-icon {
+    font-size: 25px;
+    padding: 6px 7px 6px 6px;
+}
+
+.messenger-icon {
+    font-size: 14px;
+    padding: 12px;
+}
+
+.notification-icon {
+    font-size: 14px;
+    padding: 12px 13px;
+}
+
+/* ----------------------------Tooltips----------------------------- */
+.home-tooltip,
+.video-tooltip,
+.market-tooltip,
+.group-tooltip,
+.pad-tooltip,
+.menu-tooltip,
+.messenger-tooltip,
+.notification-tooltip,
+.profile-tooltip {
+    background-color: rgb(224, 229, 231);
+    top: 60px;
+    left: 28px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 7px 12px;
+    border-radius: 8px;
+    color: black;
+    visibility: hidden;
+    transition: all 0s ease-in;
+    transition-delay: 0.5s;
+}
+
+.market-tooltip {
+    left: 10px;
+}
+
+.menu-tooltip {
+    left: -10px;
+    top: 40px;
+}
+
+.messenger-tooltip,
+.notification-tooltip,
+.profile-tooltip {
+    top: 50px;
+    left: -25px;
+}
+
+.profile-tooltip {
+    left: -20px;
+}
+
+.home-btn-div:hover .home-tooltip,
+.video-btn-div:hover .video-tooltip,
+.market-btn-div:hover .market-tooltip,
+.group-btn-div:hover .group-tooltip,
+.pad-btn-div:hover .pad-tooltip,
+.menu-btn-div:hover .menu-tooltip,
+.notification-btn-div:hover .notification-tooltip,
+.messenger-btn-div:hover .messenger-tooltip,
+.profile-btn-div:hover .profile-tooltip {
+    visibility: visible;
+}
+
+/* ---------------------right Nav Menus styling ----------------------------------*/
+.menu-tooltip,
+.messenger-tooltip,
+.notification-tooltip,
+.profile-tooltip {
+    z-index: 1;
+}
+
+.menu-btn:focus-within,
+.messenger-btn:focus-within,
+.notification-btn:focus-within {
+    background-color: rgba(55, 121, 243, 0.473);
+}
+
+.menu-dropdown-box {
+    width: 600px;
+    height: 90vh;
+    background-color: rgb(50, 52, 54);
+    top: 45px;
+    right: -140px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    visibility: hidden;
+}
+
+.menu-h3 h3 {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.big-box-overflow {
+    overflow: auto;
+    height: 82.5vh;
+    padding-bottom: 20px;
+    margin-right: 8px;
+}
+
+.big-box {
+    background-color: rgb(36, 37, 38);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.menu-search-div {
+    padding: 0 15px;
+}
+
+.menu-drop-input {
+    padding: 6px 12px 6px 0;
+    border-radius: 20px;
+    background-color: rgb(58, 59, 60);
+    outline: none;
+    padding-left: 33px;
+}
+
+.menu-drop-input::placeholder {
+    color: rgb(176, 179, 184);
+    font-size: 15px;
+}
+
+.menudrop-search-icon {
+    left: 27px;
+    top: 12px;
+    font-size: 14px;
+    color: rgb(176, 179, 184);
+}
+
+.text-menu {
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.btn-padding {
+    padding: 0 10px;
+}
+
+.btn-menuD {
+    padding: 5px 5px 7px 5px;
+    border-radius: 8px;
+}
+
+.menuD-txt-div {
+    text-align: left;
+    font-weight: 600;
+}
+
+.event-icon {
+    width: 30px;
+}
+
+.menuD-txt2 {
+    font-size: 13px;
+    color: rgb(176, 179, 184);
+    line-height: 16px;
+}
+
+.btn-menuD:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.menuD-icon-div {
+    margin-right: 15px;
+}
+
+.small-box {
+    background-color: rgb(36, 37, 38);
+    border-radius: 10px;
+    height: 75vh;
+    padding: 10px 0;
+}
+
+.menu-create-txt {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.small-box-div {
+    padding: 0 7px;
+}
+
+.small-box-btn {
+    padding: 9px 8px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.create-icon-div,
+.create-icon-div2,
+.create-icon-div3 {
+    margin-right: 15px;
+    font-size: 20px;
+    background-color: rgb(78, 78, 80);
+    padding: 0 5px 4px 7px;
+    border-radius: 100%;
+}
+
+.create-icon-div2 {
+    font-size: 18px;
+    padding: 3px 6px;
+}
+
+.create-icon-div3 {
+    padding: 0px 8px 5px 8px;
+}
+
+.create-text-div {
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.small-box-btn:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.menu-btn-div:focus-within .menu-dropdown-box {
+    visibility: visible;
+}
+
+.messenger-dropdown {
+    width: 360px;
+    height: 90vh;
+    background-color: rgb(36, 37, 38);
+    top: 45px;
+    right: -100px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.messenger-overflow-div {
+    overflow: auto;
+}
+
+.messenger-chat-div {
+    padding: 15px;
+    font-weight: 700;
+}
+
+.m-chat-text {
+    font-size: 20px;
+}
+
+.a {
+    margin-right: 10px;
+}
+
+.chat-dot-icon,
+.chat-expand-icon,
+.chat-create-icon,
+.chat-msg-icon {
+    padding: 7px;
+    border-radius: 100%;
+}
+
+.chat-dot-icon:hover,
+.chat-expand-icon:hover,
+.chat-create-icon:hover,
+.chat-msg-icon:hover {
+    background-color: rgb(57, 58, 59);
+}
+
+.chatdrop-search-icon {
+    left: 12px;
+    top: 10px;
+}
+
+.inbox-btn {
+    padding: 5px 10px 7px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.inbox-btn:focus-within,
+.community-btn:focus-within {
+    background-color: rgba(9, 67, 133, 0.534);
+    color: rgb(28, 107, 253);
+}
+
+.inbox-display {
+    height: 59vh;
+    overflow: auto;
+}
+
+.community-btn {
+    padding: 5px 10px 7px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.inbox-btn:hover,
+.community-btn:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.community-display {
+    background-color: rgb(36, 37, 38);
+    left: 0;
+    top: 160px;
+    height: 59vh;
+    width: 100%;
+    display: none;
+    z-index: 30;
+}
+
+.community-chat h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.community-chat {
+    padding-left: 0px;
+    margin: 0 5px;
+}
+
+.community-chat-btn {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.community-chat-btn:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.com-text-div {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.com-text1 {
+    font-size: 14.5px;
+}
+
+.com-text2 {
+    font-size: 13px;
+    color: rgb(176, 179, 184);
+}
+
+.com-text3 {
+    background-color: rgb(116, 117, 119);
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+.com-text3:hover {
+    background-color: rgb(76, 77, 78);
+}
+
+.chat-icon,
+.chat-icon1 {
+    background-color: rgb(101, 102, 104);
+    padding: 13px;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+.chat-icon1 {
+    background-color: rgb(222, 218, 255);
+    color: rgb(248, 187, 4);
+}
+
+
+.community-focus-div:focus-within .community-display {
+    display: block;
+}
+
+.chat-footer {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    /* background-color: red; */
+    margin-top: -15px;
+}
+
+.chat-footer a {
+    text-decoration: none;
+}
+
+.chat-footer a:hover {
+    text-decoration: underline;
+}
+
+.conversation-div {
+    margin: 0 5px;
+}
+
+.conversation-btn {
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.conversation-btn:hover {
+    background-color: rgb(57, 58, 59);
+}
+
+.chat-pix {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+
+.chat-name {
+    font-size: 14.5px;
+}
+
+.chatss {
+    font-size: 13px;
+    color: rgb(176, 179, 184);
+}
+
+.read-icon,
+.delivered-icon {
+    font-size: 12px;
+}
+
+.chat-conver-div {
+    text-align: left;
+    margin-left: 10px;
+    /* line-height: 18px; */
+}
+
+.chat-option-div {
+    background-color: rgb(101, 102, 104);
+    top: 16px;
+    right: 30px;
+    padding: 6px 8px 5px 8px;
+    border-radius: 100%;
+    display: none;
+
+}
+
+.conversation-btn:hover .chat-option-div {
+    display: block;
+}
+
+.chat-option {
+    font-size: 20px;
+
+}
+
+.messenger-btn-div:focus-within .messenger-dropdown {
+    visibility: visible;
+}
+
+.notification-dropdown-box {
+    width: 360px;
+    height: 90vh;
+    background-color: rgb(36, 37, 38);
+    top: 45px;
+    right: -50px;
+    border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 10px;
+    visibility: hidden;
+}
+
+.notification-btn-div:focus-within .notification-dropdown-box {
+    visibility: visible;
+}
+
+.not-dot-div {
+    padding: 5px 15px;
+}
+
+.notification-text-div h4 {
+    font-weight: 700;
+}
+
+.notf-option {
+    padding: 7px 8px;
+    border-radius: 100%;
+}
+
+.notf-option:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.notf-btns-div {
+    padding: 0 15px;
+}
+
+.notf-all-text {
+    margin-right: 10px;
+    padding: 5px 12px;
+    border-radius: 20px;
+}
+
+.notf-unread-text {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.notf-all-text:focus-within,
+.notf-unread-text:focus-within {
+    background-color: rgba(9, 67, 133, 0.534);
+    color: rgb(28, 107, 253);
+}
+
+.notf-all-text:hover,
+.notf-unread-text:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.notf-flex-btn-div {
+    margin: 0 7px;
+}
+
+.notf-flex-btn {
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.notf-flex-btn:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.new-link-div {
+    padding: 10px 15px 0 15px;
+}
+
+.new-link-div h5 {
+    font-size: 17px;
+}
+
+.new-link-div a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(0, 119, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.new-link-div a:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.notf-img {
+    margin-right: 10px;
+}
+
+.imggg {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+
+.notf-text1 {
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.notf-text2 {
+    font-size: 12px;
+    color: rgb(0, 102, 255);
+}
+
+.notf-conver-div {
+    text-align: left;
+    margin-right: 10px;
+}
+
+.notf-indicator {
+    width: 25px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: rgb(0, 102, 255);
+}
+
+.notf1-option {
+    right: 30px;
+    top: 30px;
+    background-color: rgb(36, 37, 38);
+    padding: 10px 11px;
+    border-radius: 100%;
+}
+
+.notf1-option:hover {
+    background-color: rgb(83, 84, 85);
+}
+
+.profile-dropdown-box {
+    background-color: rgb(36, 37, 38);
+    width: 360px;
+    top: 45px;
+    right: 0;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    visibility: hidden;
+}
+
+.profile-btn-div:focus-within .profile-dropdown-box {
+    visibility: visible;
+}
+
+.sub-dropdown {
+    background-color: rgb(36, 37, 38);
+    margin: 0 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.233);
+    padding: 5px 5px;
+    border-radius: 8px;
+}
+
+.profile-button-div {
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+
+.profile-button-div:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.prf-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.prf-name-div {
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.logo-icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.prf-name-div1 {
+    color: rgb(0, 102, 255);
+}
+
+.prf-50 {
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(228, 30, 63);
+    padding: 1px 5px;
+    border-radius: 20px;
+}
+
+.rotate-icon .switch {
+    font-size: 45px;
+    top: 10px;
+    right: -2px;
+    color: rgb(169, 177, 185);
+    transition: all 0.3s linear;
+}
+
+.rotate-icon .switch:hover {
+    transform: rotate(180deg);
+}
+
+.padding-div {
+    margin: 15px 7px 0 7px;
+}
+
+.other-btns {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.other-btns:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.other-btns a {
+    text-decoration: none;
+}
+
+.d2 {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.d1-icon,
+.d11-icon {
+    font-size: 20px;
+    background-color: rgb(90, 91, 92);
+    padding: 8px 7px 8px 8px;
+    border-radius: 100%;
+}
+
+.d11-icon {
+    padding: 8px 12px 8px 8px;
+}
+
+.d3-icon {
+    font-size: 20px;
+    color: rgb(169, 177, 185);
+}
+
+.fff {
+    padding: 0 17px;
+    text-align: left;
+    line-height: 15px;
+}
+
+.ff {
+    text-decoration: none;
+    color: rgb(169, 177, 185);
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+/* --------------------------End of right nav styling----------------- */
+
+/* --------------------------------content styling---------------------------------------- */
+.watch-content {
+    margin-top: 58px;
+    background-color: rgb(24, 25, 26);
+    /* background-color: red; */
+}
+
+/* -------------------- watch left section------------------- */
+.left-section {
+    /* width: 365px; */
+    width: 36%;
+    height: 100vh;
+    border-right: 1px solid rgb(57, 58, 59);
+    background-color: rgb(36, 37, 38);
+    /* background-color: red; */
+}
+
+.pad1-div {
+    padding: 15px;
+}
+
+.watch-text {
+    font-weight: 700;
+}
+
+.settings-icon {
+    font-size: 20px;
+    background-color: rgb(90, 91, 92);
+    padding: 8px 7px 8px 8px;
+    border-radius: 100%;
+}
+
+.settings-icon:hover {
+    background-color: rgb(128, 129, 131);
+}
+
+.search-video-input {
+    outline: none;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 30px;
+    background-color: rgb(58, 59, 60);
+}
+
+.search-video-input::placeholder {
+    color: rgb(176, 179, 184);
+    font-size: 15px;
+}
+
+.search-video-div:focus-within .search-video-input::placeholder {
+    color: rgb(138, 138, 139);
+}
+
+.s-icon {
+    left: 10px;
+    top: 20px;
+    font-size: 13px;
+}
+
+.pad2-div {
+    /* background-color: red; */
+    margin: 0 7px;
+}
+
+.watch-btn-div {
+    border-radius: 8px;
+    padding: 10px 8px;
+}
+
+.watch-btn-div:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.watch-btn-div:focus-within {
+    background-color: rgb(58, 59, 60);
+}
+
+.w-text {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.t1-icon,
+.t2-icon,
+.t3-icon,
+.t4-icon {
+    padding: 10px 8px;
+    border-radius: 100%;
+    /* background-color: red; */
+}
+
+.t3-icon {
+    font-size: 20px;
+    padding: 6px 8px 7px 7px;
+}
+
+.t4-icon {
+    /* font-size: 20px; */
+    padding: 10px 12px 10px 11px;
+}
+
+.watch-btn-div:focus-within .t1-icon {
+    background-color: rgb(24, 119, 242);
+}
+
+.watch-btn-div:focus-within .t2-icon {
+    background-color: rgb(240, 40, 74);
+}
+
+.watch-btn-div:focus-within .t3-icon {
+    background-color: rgb(42, 187, 167);
+}
+
+.watch-btn-div:focus-within .t4-icon {
+    background-color: rgb(247, 185, 40);
+}
+
+/* --------------------------------------end of left section--------------------------------- */
+/* -------------------------left content---------------------------------- */
+.left-content,
+.semi-left-content {
+    width: 305px;
+    height: 100vh;
+    background-color: rgb(24, 25, 26);
+    overflow: auto;
+    padding-bottom: 55px;
+}
+
+.left-container {
+    padding: 15px 0 0 10px;
+}
+
+.my-profile-div,
+.friends-div,
+.left-section-div,
+.left-seemore-div,
+.left-seeless-div,
+.short-text-div {
+    padding: 7px 12px 9px 5px;
+    border-radius: 10px;
+    /* background-color: blue; */
+    width: 288px;
+}
+
+.friends-div a,
+.my-profile-div a {
+    text-decoration: none;
+}
+
+.my-profile-div:hover,
+.friends-div:hover,
+.left-section-div:hover,
+.left-seemore-div:hover,
+.left-seeless-div:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.img,
+.imgS {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.imgS {
+    width: 25px;
+    height: 25px;
+    border-radius: 0;
+    margin-right: 15px;
+}
+
+.l-text {
+    /* background-color: yellow; */
+    font-weight: 600;
+    text-align: left;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.arrow-down-div {
+    background-color: rgb(48, 48, 49);
+    margin-right: 12px;
+    border-radius: 100%;
+}
+
+.arrow-down,
+.arrow-up {
+    margin-left: -2px;
+    padding: 9px 10px 8px 12px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.see-more-div {
+    display: none;
+}
+
+.see-more-divP:focus-within .see-more-div {
+    display: block;
+}
+
+.see-less-div {
+    display: none;
+}
+
+.see-more-divP:focus-within .see-less-div {
+    display: block;
+}
+
+.short-text-div {
+    padding: 7px 12px 0 5px;
+    padding-bottom: -10px;
+}
+
+.short-text-div .p,
+.short-text-div .span {
+    font-size: 15px;
+    font-weight: 600;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.short-text-div .span {
+    font-weight: lighter;
+    color: rgb(41, 150, 240);
+    visibility: hidden;
+}
+
+.shortcut-div:hover .short-text-div .span {
+    visibility: visible;
+}
+
+.left-footer-div {
+    font-size: 13px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.aa {
+    color: rgb(228, 230, 235);
+    line-height: 15px;
+}
+
+.aa:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------end of left content styling------------------------ */
+/* -----------toggle-menu-styling------------ */
+.toggle-div {
+    right: 36%;
+    z-index: 51;
+    top: 5px;
+    visibility: hidden;
+}
+
+.toggle-icon {
+    font-size: 25px;
+    /* background-color: red; */
+    padding: 50% 130%;
+    border-radius: 5px;
+}
+
+.toggle-icon:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.toggle-dropdown-div {
+    width: 100vw;
+    height: 93vh;
+    left: 0;
+    top: 4rem;
+    visibility: hidden;
+}
+
+.toggle-div-P:focus-within .toggle-dropdown-div {
+    visibility: visible;
+}
+
+.toggle-div-P:focus-within .toggle-icon {
+    color: rgb(28, 107, 253);
+}
+
+/* --------------end of toggle styling------------- */
+
+/* -------------------------------------------watch middle section---------------------- */
+.middle-section {
+    background-color: rgb(24, 25, 26);
+    height: 100vh;
+}
+
+.watch-content-div {
+    text-align: left;
+    /* background-color: green; */
+    background-color: rgb(24, 25, 26);
+    height: 100%;
+    padding-top: 20px;
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 60px;
+}
+
+.new-div {
+    background-color: rgb(36, 37, 38);
+    /* background-color: red; */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: 15%;
+    margin-left: 15%;
+}
+
+.box-pad {
+    padding: 10px;
+}
+
+.box-pad a {
+    text-decoration: none;
+}
+
+.box-pad a:hover {
+    text-decoration: underline;
+}
+
+.p {
+    margin-left: 10px;
+    line-height: 17px;
+}
+
+.pix {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.t1 {
+    font-size: 15px;
+    color: rgb(228, 230, 235);
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.t2 {
+    margin-left: 3px;
+    font-size: 15px;
+    color: rgb(0, 119, 255);
+}
+
+.t3 {
+    color: rgb(176, 179, 184);
+    font-size: 13px;
+    margin-right: 3px;
+}
+
+.z {
+    color: rgb(176, 179, 184);
+}
+
+.m-icon {
+    padding: 8px 10px;
+    border-radius: 100%;
+}
+
+.m-icon:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.e-icon {
+    font-size: 11px;
+    margin-left: 3px;
+    color: rgb(176, 179, 184);
+}
+
+.box-pad2 {
+    padding: 0 10px;
+    font-size: 21px;
+}
+
+.watch-video-div {
+    background-color: black;
+}
+
+.watch-video {
+    height: 400px;
+}
+
+.ogb-img-div {
+    background-color: black;
+}
+
+.ogb-img {
+    width: 220px;
+    height: 400px;
+}
+
+.watch-video-footer {
+    padding: 0 10px;
+}
+
+.f1 {
+    /* background-color: red; */
+    width: 35%;
+}
+
+.likey-text,
+.comm-text,
+.share1-text {
+    margin-left: 5px;
+    font-size: 14px;
+    color: rgb(169, 177, 185);
+}
+
+.like-section1,
+.comment-section1,
+.share-section1 {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.like-section1:hover,
+.comment-section1:hover,
+.share-section1:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.likey-icon,
+.comm-icon,
+.share1-icon {
+    font-size: 20px;
+    color: rgb(169, 177, 185);
+}
+
+.r-side {
+    font-size: 13px;
+}
+
+.r-side a {
+    text-decoration: none;
+}
+
+.r-side a:hover {
+    text-decoration: underline;
+}
+
+.w {
+    color: rgb(169, 177, 185);
+}
+
+.y {
+    color: rgb(169, 177, 185);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+
+
+/* --------------------------------------end of middle section----------------------------------------- */
+/* ---------------------------fixed message button--------------------- */
+
+.c-msg-fixed-div {
+    bottom: 20px;
+    right: 20px;
+}
+
+.c-msg-div {
+    background-color: rgb(75, 76, 79);
+    padding: 12px 13px 12px 15px;
+    border-radius: 100%;
+}
+
+.new-msg {
+    font-size: 20px;
+}
+
+.c-msg-div:hover {
+    background-color: rgb(110, 112, 119);
+}
+
+.dt-icon1-div {
+    top: -50px;
+    background-color: rgb(75, 76, 79);
+    padding: 8px 11px 6px 10px;
+    border-radius: 100%;
+    visibility: hidden;
+}
+
+.dt-icon1 {
+    font-size: 20px;
+}
+
+.dt-icon-dropup {
+    padding: 8px 8px 0 8px;
+    width: 320px;
+    height: 83px;
+    background-color: rgb(36, 37, 38);
+    top: -120px;
+    left: -310px;
+    border-radius: 10px 10px 0 10px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.199);
+    visibility: hidden;
+}
+
+.dt-icon-dropup::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 0 15px;
+    transform: rotate(180deg);
+    border-color: transparent transparent transparent rgb(36, 37, 38);
+    bottom: -15px;
+    right: 0;
+}
+
+.dot-option:focus-within .dt-icon-dropup {
+    visibility: visible;
+}
+
+.circle-x {
+    font-size: 22px;
+}
+
+.dropup-txt {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.drp-text-div {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.drp-text-div2 {
+    border-radius: 5px;
+    padding: 3px 0 0 5px;
+}
+
+.drp-text-div:hover,
+.drp-text-div2:hover {
+    background-color: rgb(58, 59, 60);
+}
+
+.c-msg-fixed-div:focus-within .dt-icon1-div,
+.c-msg-fixed-div:focus-within .msg-box-div,
+.c-msg-div:hover .c-msg-tooltip {
+    visibility: visible;
+}
+
+.c-msg-tooltip {
+    text-align: left;
+    font-size: 13px;
+    left: -100px;
+    top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: rgb(224, 229, 231);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: black;
+    visibility: hidden;
+    transition: all 0s ease-in;
+    transition-delay: 0.5s;
+    z-index: 13;
+}
+
+.msg-box-div {
+    width: 330px;
+    height: 458px;
+    background-color: rgb(36, 37, 38);
+    top: -390px;
+    left: -340px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.219);
+    visibility: hidden;
+}
+
+.new-msg-text {
+    font-weight: 600;
+}
+
+.x-msg {
+    font-size: 22px;
+}
+
+.to {
+    margin-top: 15px;
+    margin-left: 5px;
+    cursor: text;
+}
+
+.input-to {
+    background-color: inherit;
+    outline: none;
+    padding-left: 10px;
+    width: 150px;
+}
+
+.suggest-text {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(0, 102, 255);
+}
+
+.hr1 {
+    height: 3px;
+    background-color: rgb(0, 102, 255);
+    margin-top: 15px;
+}
+
+/* -------------enf of fixed message button----------------- */
+
+/* .nav-middle {
+    display: none;
+} */
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+@media (max-width: 1115px) {
+    #search-input {
+        width: 30px;
+        border-radius: 100px;
+    }
+
+    .middle-content {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1099px) {
+    .toggle-div{
+        visibility: visible;
+    }
+
+    .pad-btn-div{
+        visibility: hidden;
+    }
+    .left-content{
+        display: none;
+    }
+}
+
+@media (max-width: 1010px) {
+    .nav-middle {
+        display: none;
+    }
+
+    .toggle-div {
+        left: 120px;
+        top: 3px;
+    }
+}
